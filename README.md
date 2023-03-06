@@ -1,2 +1,10 @@
-# NER-Crypto
-A Named Entity Recognition Model trained on Headlines in the Crypto Space
+
+# Crypto NER
+
+A brief description of what this project does and who it's for
+
+
+## Screenshots
+
+![App Screenshot](Readme/sources_fig.png)
+
