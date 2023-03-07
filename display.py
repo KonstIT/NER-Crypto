@@ -4,9 +4,10 @@
 import spacy
 from spacy import displacy
 
-text = "BITCOIN MINER BITNILE RELOCATES 6,572 BITCOIN MINERS TO MICHIGAN"
+text = "EXAMPLE: BITCOIN MINER BITNILE RELOCATES 6,572 BITCOIN MINERS TO MICHIGAN"
 
-nlp = spacy.load("outputBest/model-best")
+#Enter Path to your trained model
+nlp = spacy.load("output/model-best")
 doc = nlp(text)
 displacy.serve(doc, style="ent")
 # %%

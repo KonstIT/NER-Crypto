@@ -1,13 +1,33 @@
 
 # Crypto NER
 
-A brief description of what this project does and who it's for
+A brief description of what this project is about:
+
+You can get started right away and use the data, train your own model with the notebook provided on Kaggle and in this repository, or go deep first. Then just scroll down to [Detailed Information](#detailed-information).
+
+# Quickstart
+#### Train your own model 
+- If you want to train you own model based on the collected data or the already labelled headlines, check out the Dataset and the Notebook on [Kaggle](https://www.kaggle.com/datasets/kaballa/cryptoner-ml-model), or use the Notebook in the <code>/Kaggle</code> folder and the dataset as well as the labelled data in the <code>/Kaggle</code> folder.
+
+#### Use the pretrained model 
+
+- You can also use the pretrained model, which was trained on already labelled data. You can find the model in folder <code>/output</code>. You can play with the pretrained model using <code>display.py</code>.
+  
+- If you want to let the pretrained model label your own data, use <code>testPretrainedModel.py</code>. Just change the path to the data, that you want the model to label. 
+
+#### Collect data 
+
+-
 
 
-## Screenshots
+## Dozens of different crypto-related data sources
 ![App Screenshot](Readme/sources_fig.png)
 
 
+
+
+# Detailed Information
+Detailed information about the data, the training of the model, the pipeline used, the resources used to train the model, its performance and how the trained model in the repository can be used for own projects.
 
 ## 1. Collecting Data via API 
 To collect the data, the repository includes a docker ready programm to fetch data from the free CryptoPanic API. Include your own Authcode that you can get here: [CryptoPanic API](https://cryptopanic.com/developers/api/keys/)
@@ -71,7 +91,7 @@ In order to setup a ML backend that you can add in the LabelStudio Backend, you 
 
 
 
-## 6. Benchmark, Testing and Results
+## 6. Benchmark and Result
 
 ##### 1. Benchmark - Wandb.ai
 I used [wandb.ai](https://wandb.ai/) to track the training of my NER model. Wandb has to be included into your .config file. 
@@ -115,4 +135,34 @@ wandb.login(key=wandb_api)</code>
 
 </details>
 
-##### 2. Testing - Wandb.ai
+
+
+##### 2. Results - Trained Model
+The repository includes one working model. The model included in the /output folder was trained on english headlines and therefore only works on english headlines. The performance of this model is:
+<details> <summary>Model Performance</summary>
+<code>
+"performance":{
+    "ents_f":0.8244897959,
+    "ents_p":0.8416666667,
+    "ents_r":0.808,
+    "ents_per_type":{
+      "ORG":{
+        "p":0.6666666667,
+        "r":0.4375,
+        "f":0.5283018868
+      },
+      "Cryptocurrency":{
+        "p":0.8863636364,
+        "r":0.9512195122,
+        "f":0.9176470588
+      },
+      "PER":{
+        "p":0.8181818182,
+        "r":0.8181818182,
+        "f":0.8181818182
+      }
+    },
+    "transformer_loss":7.2778955509,
+    "ner_loss":13.2785245254
+  }
+  </code> </details>
