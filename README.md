@@ -88,7 +88,7 @@ In order to setup a ML backend that you can add in the LabelStudio Backend, you 
 
 
 
-## 6. Benchmark and Result
+## 5. Benchmark and Result
 
 ##### 1. Benchmark - Wandb.ai
 I used [wandb.ai](https://wandb.ai/) to track the training of my NER model. Wandb has to be included into your .config file. 
