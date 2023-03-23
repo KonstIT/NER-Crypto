@@ -3,7 +3,7 @@
 
 A brief description of what this project is about:
 
-You can get started right away and use the data, train your own model with the notebook provided on Kaggle and in this repository, or go deep first. Then just scroll down to [Detailed Information](#detailed-information).
+You can get started right away and use the data: train your own model with the notebook provided on Kaggle and in this repository. If you wanttodive deep first, scroll down to [Detailed Information](#detailed-information).
 
 # Quickstart
 #### Train your own model 
