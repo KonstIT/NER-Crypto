@@ -3,7 +3,7 @@
 
 A brief description of what this project is about:
 
-You can get started right away and use the data: train your own model with the notebook provided on Kaggle and in this repository. If you wanttodive deep first, scroll down to [Detailed Information](#detailed-information).
+You can get started right away and use the data: train your own model with the notebook provided on Kaggle and in this repository. If you want to dive deep first, scroll down to [Detailed Information](#detailed-information).
 
 # Quickstart
 #### Train your own model 
@@ -15,9 +15,6 @@ You can get started right away and use the data: train your own model with the n
   
 - If you want to let the pretrained model label your own data, use <code>testPretrainedModel.py</code>. Just change the path to the data, that you want the model to label. 
 
-#### Collect data 
-
--
 
 
 ## Dozens of different crypto-related data sources
